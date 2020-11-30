@@ -1,0 +1,13 @@
+@charset "utf-8";
+#tabBar{position: fixed; width: 100%; bottom: 0; height: 75px; background: linear-gradient(to bottom,#409300,#5CA500); box-shadow: 0 -3px 6px #0004;}
+#tabBar ul{display: flex; height: 100%;}
+#tabBar ul li{flex: 1; height: 100%;}
+#tabBar ul li:nth-child(2){margin-right: 35px;}
+#tabBar ul li:nth-child(3){margin-left: 35px;}
+#tabBar ul li a{display: flex; flex-direction: column; justify-content: flex-end; align-items: center; height: 80%;}
+#tabBar ul li a img{margin-bottom: 3px;}
+.makeNewBtn{position: absolute; left: 50%; margin-left: -42px; bottom: 0; display: block; width: 84px; height: 84px; background: #74CA32; border-radius: 42px; box-shadow: 0 6px 6px #0003; }
+.makeNewBtn div{transition: transform 300ms;}
+.makeNewBtn span{position: absolute; left: 50%; top: 50%; display: block; width: 32px; height: 4px; background: #fff; transform: translate(-50%,-50%);}
+.makeNewBtn span:first-child{width: 4px; height: 32px;}
+

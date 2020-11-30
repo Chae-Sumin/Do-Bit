@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Do-bit</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="apple-touch-icon-precomposed" href=".png">
+    <link rel="apple-touch-startup-image" href=".png">
+    <link rel="stylesheet" type="text/css" href="css/chat.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBC61sj4uTkcAh-StMaFlw2ybQAiP5O9qQ&callback=initMap" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/0c116763ce.js" crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+    <script src="js/chat.js"></script>
+    <!--  -->
+</head>
+<body>
+    <div class="status_bar">
+        <span class="time"><span>9</span>:<span>30</span></span>
+        <span class="uti">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-battery-full"></i>
+        </span>
+    </div>
+    <div id="wrap">
+        <header>
+            <h1>Community</h1>
+            <button type="button" class="friendMenu"></button>
+            <button type="button" class="hamburger"><i class="fas fa-times"></i></button>
+        </header>
+        <main>
+            <div class="friends_name">Do-bit manager</div>
+            <div class="chat_room">
+                <section class="dialog_section">
+                    <header class="dialog_header"><span>2020-08-20</span></header>
+                    <ul class="dialog_body">
+                        <li class="friend on">
+                            <dl>
+                                <dt>Friends_profile</dt>
+                                <dd class="dialog">Hello, If you have any questions, ask please!</dd>
+                            </dl>
+                        </li>
+                        <li class="me">
+                            <dl>
+                                <dt class="blind">my_profile</dt>
+                                <dd class="dialog">How can i get to the Do-bit office</dd>
+                            </dl>
+                        </li>
+                        <li class="friend">
+                            <dl>
+                                <dt>Friends_profile</dt>
+                                <dd class="dialog">123-45, 8th floor, Nonhyeon-dong, Gangnam-gu, Seoul</dd>
+                                <dd class="dialog"><div id="map"></div></dd>
+                            </dl>
+                        </li>
+                        <li class="me">
+                            <dl>
+                                <dt class="blind">my_profile</dt>
+                                <dd class="dialog">Thanks!</dd>
+                            </dl>
+                        </li>
+                        <li class="friend">
+                            <dl>
+                                <dt>Friends_profile</dt>
+                                <dd class="dialog">Please call me anytime</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+        </main>    
+        <footer>
+            <form method="POST" action="" class="chat_box">
+                <fieldset>
+                    <input type="text" class="text" />
+                    <input type="button" value="음성사용" class="voice" />
+                    <input type="submit" value="보내기" class="send" />
+                </fieldset>
+            </form>
+        </footer>
+    </div>
+    <script>
+        clocK();
+        autoChat();
+        closeChat();
+        window.initMap = function() {
+            const doBitOffice = { lat: 37.511545, lng: 127.023660 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 14,
+                center: doBitOffice,
+            });
+            const marker = new google.maps.Marker({
+                position: doBitOffice,
+                map: map,
+            });
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="85.154" height="75.709" viewBox="0 0 85.154 75.709">
+  <g class="watering" transform="translate(-113.993 -11.263)">
+    <g class="can">
+      <path d="M177.129,65.7V55.892l-3.213,2.418L156,56.984l13.481-15.86-25.61-25.61L116.183,39.047c-7.436,7.436,22.327,37.2,29.763,29.763l3.083-3.627,24.961-1.847Z" fill="#dee8cf" stroke="#231f20" stroke-miterlimit="10" stroke-width="1.958"/>
+      <path d="M129.276,27.006a8.8,8.8,0,0,1,13.342-11.344l1.5-1.277a10.76,10.76,0,0,0-16.339,13.89Z" fill="#231f20"/>
+    </g>
+    <g class="water">
+      <path d="M180.386,65.25s11.248-5.931,10.572,20.667" fill="none" stroke="#c4e8fa" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path d="M180.386,61.125s14.947-6.708,14.114,24.792" fill="none" stroke="#c4e8fa" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path d="M180.386,56.5S200,50.75,198,85.917" fill="none" stroke="#c4e8fa" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

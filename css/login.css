@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(common.css);
+*{-webkit-text-size-adjust: none;}
+body{width: 100%; height: 100%; overflow: hidden; background: linear-gradient(to right, #A1C4FD 0%, #A7CBFD 16%, #BBE1FD 64%,  #C2E9FD 100%);color: #fff; font-family: SFCompact, sans-serif; transition: all 1s;}
+body.login{opacity: 0.3;}
+body.login #blur{opacity: 1;}
+#wrap{width: 100%; height: 100%;}
+#tree{display: flex; justify-content: center; align-items: flex-end; position: absolute; left: 50%; width: 400px; height: 82%; transform: translateX(-50%); bottom: 23.4%;}
+#tree>svg .leaf{opacity: 0;} 
+
+#ground{position: absolute; left: 0; bottom: 0; width: 100%; height: 28%; background: url(../images/login/ground.png) 0 0 / 375px 100% repeat-x;}
+
+#blur{position: absolute; left: 0; right: 0; top: 0; bottom: 0;  background: #000; opacity: 0; animation: blur 1500ms 1800ms forwards;  }
+
+#logo{position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); animation: logoAni 1500ms 4300ms 1 forwards;}
+#logo p{text-align: center;}
+#logo p.tit{font-size: 30px; margin-top: -26px; font-weight: 600; opacity: 0; animation: opAni 400ms  4000ms 1 forwards;}
+
+#main_path{ /*dasharry 340*/
+    opacity: 0;
+    stroke-dasharray: 340;
+    animation: logoAni_1 1000ms 1 2500ms forwards;
+}
+#leaf_main_vain{ /*150*/
+    opacity: 0;
+    stroke-dasharray: 150;
+    animation: logoAni_2 1200ms 1 3000ms forwards;
+}
+.leaf_vain{ /*45*/
+    opacity: 0;
+    stroke-dasharray: 45;
+    animation: logoAni_3 1500ms 1 3300ms forwards;
+}
+@keyframes blur{
+    0%{opacity: 0;}
+    100%{opacity: 0.3;}
+}
+@keyframes opAni{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes logoAni_1{
+    0%{opacity: 1; stroke-dashoffset: 340; }
+    100%{opacity: 1; stroke-dashoffset: 0; }
+}
+@keyframes logoAni_2{
+    0%{opacity: 1; stroke-dashoffset: 150; }
+    100%{opacity: 1; stroke-dashoffset: 0; }
+}
+@keyframes logoAni_3{
+    0%{opacity: 1; stroke-dashoffset: 45; }
+    100%{opacity: 1; stroke-dashoffset: 0; }
+}
+@keyframes logoAni{
+    0%{top: 50%;}
+    100%{top: 27%;}
+}
+/*---------------------------------------------------splash------------------------------------------------------*/
+/*---------------------------------------------------login------------------------------------------------------*/
+main{position: absolute; z-index: -1; width: 100%; height: 100%; opacity: 0; animation: mainAni 1000ms 5200ms 1 forwards;}
+main>form{display: flex; flex-direction: column; justify-content: space-between; align-items: center; margin-top: 43vh; width: 100%; height: 160px;}
+main>form>fieldset{display: flex; align-items: center; width: 80%; height: 40px; padding: 0 20px; box-sizing: border-box; border: 2px solid #fff; border-radius: 20px; box-shadow: 0 3px 6px #0003;}
+main>form>fieldset>label{flex: 0 0 auto; font-size: 16px; font-weight: 500; width: 80px;}
+main>form>fieldset>input{flex: 0 1 auto; height: 40px; width: calc(100% - 80px); border: none; background: none; color: #fff; font-size: 16px;}
+.submit{background: #fff; justify-content: center;}
+.submit>label{flex: 0 1 auto; width: 100%; color: #409300; cursor: pointer; text-align: center;}
+.submit>input{flex: 0 0 auto; width: 0; height: 0; overflow: hidden; text-indent: -999px;}
+.forgot{text-align: center; font-size: 16px; font-weight: 500; margin-top: 20px;}
+.signup{position: absolute; bottom: 50px; width: 100%; text-align: center; font-size: 16px; font-weight: 500;}
+.signup strong{color: #74CA32;}
+
+@keyframes mainAni{
+    0%{z-index: -1; opacity: 0;}
+    100%{z-index: 20; opacity: 1;}
+}

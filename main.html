@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Do-bit</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="apple-touch-icon-precomposed" href=".png">
+    <link rel="apple-touch-startup-image" href=".png">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/0c116763ce.js" crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+    <!--  -->
+</head>
+<body>
+    <div class="status_bar">
+        <span class="time"><span>9</span>:<span>30</span></span>
+        <span class="uti">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-battery-full"></i>
+        </span>
+    </div>
+    <div id="wrap">
+        <header>
+            <h1>Do-bit</h1>
+            <button type="button" class="friendMenu"><i class="fas fa-user-plus"></i></button>
+            <button type="button" class="hamburger"><i class="fas fa-bars"></i></button>
+        </header>
+        <main>
+            <div class="charecterState"></div>
+            <div class="content">
+                <button type="button" class="slidUpDown"><i class="fas fa-angle-up"></i></button> <!-- 컨텐츠 높이 조절 -->
+                <ul class="tab_btn">
+                    <li class="on"><button type="button"><i class="fas fa-clipboard-list"></i> To do list</button></li>
+                    <li class=""><button type="button"><i class="fas fa-redo-alt"></i> Habit</button></li>
+                    <li class="tab_btn_bg"></li>
+                </ul>
+                <article class="toDoList">
+                    <h2 class="blind">To do list</h2>
+                    <div class="todolist_inner">
+                        <div class="date_state">
+                            <div class="today">
+                                <div  class="today_set">
+                                    <span class="date">06</span>
+                                    <span class="day">Ths</span>
+                                    <span class="year_month">2020 Aug</span>
+                                </div>
+                                <span>Today</span>
+                            </div>
+                            <ul class="date_list">
+                                <li><button type="button">
+                                    <span class="day">S</span>
+                                    <span class="date">03</span>
+                                </button></li>
+                                <li><button type="button">
+                                    <span class="day">M</span>
+                                    <span class="date">04</span>
+                                </button></li>
+                                <li><button type="button">
+                                    <span class="day">T</span>
+                                    <span class="date">05</span>
+                                </button></li>
+                                <li class="on"><button type="button">
+                                    <span class="day">W</span>
+                                    <span class="date">06</span>
+                                </button></li>
+                                <li><button type="button">
+                                    <span class="day">T</span>
+                                    <span class="date">07</span>
+                                </button></li>
+                                <li><button type="button">
+                                    <span class="day">F</span>
+                                    <span class="date">08</span>
+                                </button></li>
+                                <li><button type="button">
+                                    <span class="day">S</span>
+                                    <span class="date">09</span>
+                                </button></li>
+                            </ul>
+                        </div>
+                        <ul class="todolist_list">
+                            <li>
+                                <div class="left_cont">
+                                    <span class="icon"></span>
+                                    <span class="time">12:00</span>
+                                </div>
+                                <div class="center_cont">
+                                    <span class="tit">Read a book</span>
+                                    <span class="cont">Read Harry Potter 3</span>
+                                </div>
+                                <input type="checkbox" id="todolist_check1" class="todolist_check"/>
+                                <label for="todolist_check1"><span></span><span></span></label>
+                            </li>
+                            <li>
+                                <div class="left_cont">
+                                    <span class="icon"></span>
+                                    <span class="time">12:00</span>
+                                </div>
+                                <div class="center_cont">
+                                    <span class="tit">Drinking plans</span>
+                                    <span class="cont">Drinking wine with GF</span>
+                                </div>
+                                <input type="checkbox" id="todolist_check2" class="todolist_check"/>
+                                <label for="todolist_check2"><span></span><span></span></label>
+                            </li>
+                            <li>
+                                <div class="left_cont">
+                                    <span class="icon"></span>
+                                    <span class="time">12:00</span>
+                                </div>
+                                <div class="center_cont">
+                                    <span class="tit">fix the bike</span>
+                                    <span class="cont">fix the bike gearbox</span>
+                                </div>
+                                <input type="checkbox" id="todolist_check3" class="todolist_check"/>
+                                <label for="todolist_check3"><span></span><span></span></label>
+                            </li>
+                            <li>
+                                <div class="left_cont">
+                                    <span class="icon"></span>
+                                    <span class="time">12:00</span>
+                                </div>
+                                <div class="center_cont">
+                                    <span class="tit">Health screenings</span>
+                                    <span class="cont">take a health screenings at Korea University Hospital</span>
+                                </div>
+                                <input type="checkbox" id="todolist_check4" class="todolist_check"/>
+                                <label for="todolist_check4"><span></span><span></span></label>
+                            </li>
+                            <li>
+                                <div class="left_cont">
+                                    <span class="icon"></span>
+                                    <span class="time">12:00</span>
+                                </div>
+                                <div class="center_cont">
+                                    <span class="tit">search for a job</span>
+                                    <span class="cont">search  for a job on worknet</span>
+                                </div>
+                                <input type="checkbox" id="todolist_check5" class="todolist_check"/>
+                                <label for="todolist_check5"><span></span><span></span></label>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="habit">
+                    <h2 class="blind">Habit</h2>
+                    <div class="habit_inner">
+                        <ul class="habit_list">
+                            <li>
+                                <div class="habit_info">
+                                    <span class="state_icon"><i class="fas fa-minus"></i></span><!--<i class="fas fa-smile-beam"></i>-->
+                                    <div class="center_cont">
+                                        <span class="tit">Diet</span>
+                                        <span class="cont">Do not eat high-calorie foods</span>
+                                    </div>
+                                    <div class="right_cont index1">
+                                        <button type="button" class="period">Graph</button>
+                                        <button type="button" class="neg"><i class="fas fa-minus"></i></button>
+                                        <span class="count">0</span>
+                                        <button type="button" class="pos"><i class="fas fa-plus"></i></button>
+                                    </div>
+                                </div>
+                                <div class="habit_graph">
+                                    <div class="coord_system">
+                                        <ul class="line_X"><li><span>10</span>/<span>15</span></li><li><span>10</span>/<span>16</span></li><li><span>10</span>/<span>17</span></li><li><span>10</span>/<span>18</span></li><li><span>10</span>/<span>19</span></li><li><span>10</span>/<span>20</span></li><li><span>10</span>/<span>21</span></li><li><span>10</span>/<span>22</span></li></ul>
+                                        <ul class="line_Y"><li>-6</li><li>-3</li><li>0</li><li>3</li><li>6</li></ul>
+                                        <canvas class="coord_plane">
+                                        </canvas>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="habit_info">
+                                    <span class="state_icon"><i class="fas fa-minus"></i></span><!--<i class="fas fa-smile-beam"></i><i class="fas fa-frown-open"></i>-->
+                                    <div class="center_cont">
+                                        <span class="tit">Drink water</span>
+                                        <span class="cont">Drink water instead of drinks</span>
+                                    </div>
+                                    <div class="right_cont index2">
+                                        <button type="button" class="period">Graph</button>
+                                        <button type="button" class="neg"><i class="fas fa-minus"></i></button>
+                                        <span class="count">0</span>
+                                        <button type="button" class="pos"><i class="fas fa-plus"></i></button>
+                                    </div>
+                                </div>
+                                <div class="habit_graph">
+                                    <div class="coord_system">
+                                        <ul class="line_X"><li><span>10</span>/<span>15</span></li><li><span>10</span>/<span>16</span></li><li><span>10</span>/<span>17</span></li><li><span>10</span>/<span>18</span></li><li><span>10</span>/<span>19</span></li><li><span>10</span>/<span>20</span></li><li><span>10</span>/<span>21</span></li><li><span>10</span>/<span>22</span></li></ul>
+                                        <ul class="line_Y"><li>-6</li><li>-3</li><li>0</li><li>3</li><li>6</li></ul>
+                                        <canvas class="coord_plane">
+                                        </canvas>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="habit_info">
+                                    <span class="state_icon"><i class="fas fa-minus"></i></span><!--<i class="fas fa-smile-beam"></i>-->
+                                    <div class="center_cont">
+                                        <span class="tit">Exercise steadily</span>
+                                        <span class="cont">1 hour or more daily</span>
+                                    </div>
+                                    <div class="right_cont index3">
+                                        <button type="button" class="period">Graph</button>
+                                        <button type="button" class="neg"><i class="fas fa-minus"></i></button>
+                                        <span class="count">0</span>
+                                        <button type="button" class="pos"><i class="fas fa-plus"></i></button>
+                                    </div>
+                                </div>
+                                <div class="habit_graph">
+                                    <div class="coord_system">
+                                        <ul class="line_X"><li><span>10</span>/<span>15</span></li><li><span>10</span>/<span>16</span></li><li><span>10</span>/<span>17</span></li><li><span>10</span>/<span>18</span></li><li><span>10</span>/<span>19</span></li><li><span>10</span>/<span>20</span></li><li><span>10</span>/<span>21</span></li><li><span>10</span>/<span>22</span></li></ul>
+                                        <ul class="line_Y"><li>-6</li><li>-3</li><li>0</li><li>3</li><li>6</li></ul>
+                                        <canvas class="coord_plane">
+                                        </canvas>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="habit_info">
+                                    <span class="state_icon"><i class="fas fa-minus"></i></span><!--<i class="fas fa-smile-beam"></i>-->
+                                    <div class="center_cont">
+                                        <span class="tit">Daily task</span>
+                                        <span class="cont"> Memorize 200 words</span>
+                                    </div>
+                                    <div class="right_cont index4">
+                                        <button type="button" class="period">Graph</button>
+                                        <button type="button" class="neg"><i class="fas fa-minus"></i></button>
+                                        <span class="count">0</span>
+                                        <button type="button" class="pos"><i class="fas fa-plus"></i></button>
+                                    </div>
+                                </div>
+                                <div class="habit_graph">
+                                    <div class="coord_system">
+                                        <ul class="line_X"><li><span>10</span>/<span>15</span></li><li><span>10</span>/<span>16</span></li><li><span>10</span>/<span>17</span></li><li><span>10</span>/<span>18</span></li><li><span>10</span>/<span>19</span></li><li><span>10</span>/<span>20</span></li><li><span>10</span>/<span>21</span></li><li><span>10</span>/<span>22</span></li></ul>
+                                        <ul class="line_Y"><li>-6</li><li>-3</li><li>0</li><li>3</li><li>6</li></ul>
+                                        <canvas class="coord_plane">
+                                        </canvas>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="habit_info">
+                                    <span class="state_icon"><i class="fas fa-minus"></i></span><!--<i class="fas fa-smile-beam"></i>-->
+                                    <div class="center_cont">
+                                        <span class="tit">Daily task</span>
+                                        <span class="cont">Write an experiment report</span>
+                                    </div>
+                                    <div class="right_cont index5">
+                                        <button type="button" class="period">Graph</button>
+                                        <button type="button" class="neg"><i class="fas fa-minus"></i></button>
+                                        <span class="count">0</span>
+                                        <button type="button" class="pos"><i class="fas fa-plus"></i></button>
+                                    </div>
+                                </div>
+                                <div class="habit_graph">
+                                    <div class="coord_system">
+                                        <ul class="line_X"><li><span>10</span>/<span>15</span></li><li><span>10</span>/<span>16</span></li><li><span>10</span>/<span>17</span></li><li><span>10</span>/<span>18</span></li><li><span>10</span>/<span>19</span></li><li><span>10</span>/<span>20</span></li><li><span>10</span>/<span>21</span></li><li><span>10</span>/<span>22</span></li></ul>
+                                        <ul class="line_Y"><li>-6</li><li>-3</li><li>0</li><li>3</li><li>6</li></ul>
+                                        <canvas class="coord_plane">
+                                        </canvas>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <nav id="tabBar">
+            <ul>
+            <li><a href="main.html"><span><img src="images/main_on.svg" alt="main svg"></span>Main page</a></li> 
+            <li><a href="calendar.html"><span><img src="images/calendar.svg" alt="calendar svg"></span>Calendar</a></li> 
+            <li><a href="character.html"><span><img src="images/charactor.svg" alt="charactor svg"></span>Charactor</a></li> 
+            <li><a href="community.html"><span><img src="images/community.svg" alt="Community svg"></span>Community</a></li> 
+            </ul>
+            <button type="button" class="makeNewBtn"><div><span></span><span></span></div></button>
+        </nav>
+        <div class="draw_up">
+            <ul class="make_menu">
+                <li><span>New To do list</span><a href="#"><i class="fas fa-clipboard-list"></i></a></li>
+                <li><span>New Schedule</span><a href="#"><i class="far fa-calendar-alt"></i></a></li>
+                <li><span>New Habit</span><a href="#"><i class="fas fa-redo-alt"></i></a></li>
+            </ul>
+        </div>
+        <div class="draw_left">
+            <div class="friends_inner">
+                <fieldset class="friends_search_box">
+                    <input type="search" class="friends_search" placeholder="Search other Friends" />
+                    <input type="submit" class="friends_search_submit" value="" />
+                </fieldset>
+                <div class="friends_list">
+                    <h2>My Friends</h2>
+                    <ul>
+                        <li><a href="chat.html">
+                            <span class="profile_img"></span>
+                            <div class="center_cont"><span class="profile_name">Do-bit manager</span><span class="Last_chat">Hello, If you have any questions, ask please!</span></div>
+                            <div class="right_cont"><span class="Last_chat_time">08/20</span><span class="connect on"></span></div>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="profile_img"></span>
+                            <div class="center_cont"><span class="profile_name">Roy Lawson</span><span class="Last_chat">Lorem ipsum dolor sit amet</span></div>
+                            <div class="right_cont"><span class="Last_chat_time">08/06</span><span class="connect"></span></div>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="profile_img"></span>
+                            <div class="center_cont"><span class="profile_name">Alex Matthews</span><span class="Last_chat">Lorem ipsum dolor sit amet</span></div>
+                            <div class="right_cont"><span class="Last_chat_time">08/06</span><span class="connect"></span></div>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="profile_img"></span>
+                            <div class="center_cont"><span class="profile_name">Benjamin Brewer</span><span class="Last_chat">Lorem ipsum dolor sit amet</span></div>
+                            <div class="right_cont"><span class="Last_chat_time">08/06</span><span class="connect"></span></div>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="profile_img"></span>
+                            <div class="center_cont"><span class="profile_name">Bianca Schneider</span><span class="Last_chat">Lorem ipsum dolor sit amet</span></div>
+                            <div class="right_cont"><span class="Last_chat_time">08/06</span><span class="connect"></span></div>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="profile_img"></span>
+                            <div class="center_cont"><span class="profile_name">Charles Fox</span><span class="Last_chat">Lorem ipsum dolor sit amet</span></div>
+                            <div class="right_cont"><span class="Last_chat_time">08/06</span><span class="connect"></span></div>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="profile_img"></span>
+                            <div class="center_cont"><span class="profile_name">Mary Palmer</span><span class="Last_chat">Lorem ipsum dolor sit amet</span></div>
+                            <div class="right_cont"><span class="Last_chat_time">08/06</span><span class="connect"></span></div>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="profile_img"></span>
+                            <div class="center_cont"><span class="profile_name">Joe Biden</span><span class="Last_chat">Lorem ipsum dolor sit amet</span></div>
+                            <div class="right_cont"><span class="Last_chat_time">08/06</span><span class="connect"></span></div>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="friends_close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="draw_right">
+            <ul class="setting_menu">
+                <li class="userinfo">
+                    <span class="profile_img"></span>
+                    <span class="right_cont">
+                        <span class="profile_name">User Name</span>
+                        <a href="index.html" class="logout">Logout</a>
+                    </span>
+                </li>
+                <li>
+                    <button type="button">What is Do-bit?</button>
+                    <ul>
+                        <li><a href="#">Do-bit Manager</a></li>
+                        <li><a href="#">Do-bit Story</a></li>
+                        <li><a href="#">Do-bit Company</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button type="button">Setting</button>
+                    <ul>
+                        <li><a href="#">Option Setting</a></li>
+                        <li><a href="#">Thema customizing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button type="button">Acocount<br /> Management</button>
+                    <ul>
+                        <li><a href="#">Friends Management</a></li>
+                        <li><a href="#">Change of personal info.</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button type="button">Data Back Up<br />&amp; Recovery</button>
+                    <ul>
+                        <li><a href="#">Data Back Up</a></li>
+                        <li><a href="#">Data Back Up Recordings</a></li>
+                        <li><a href="#">Data Recovery</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button type="button">Verson Info. &amp;<br />Update History</button>
+                    <ul>
+                        <li><a href="#">Verson 1.01.1</a></li>
+                        <li><a href="#">Update History</a></li>
+                        <li><a href="#">Update</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button type="button" class="Rmenu_close"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+    
+    <script>
+        COMMON();
+        MAIN();
+    </script>
+</body>
+</html>

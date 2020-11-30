@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="59.509" height="87.618" viewBox="0 0 59.509 87.618">
+  <g class="Herbicide" transform="translate(-25.186 -110.807)">
+    <g class="can">
+      <path d="M18.889,0h0A18.889,18.889,0,0,1,37.778,18.889V72.45a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V18.889A18.889,18.889,0,0,1,18.889,0Z" transform="translate(26.111 125.05)" fill="#dee8cf" stroke="#231f20" stroke-miterlimit="10" stroke-width="1.85"/>
+      <rect width="12.305" height="12.339" transform="translate(38.847 113.843)" fill="#fff" stroke="#231f20" stroke-miterlimit="10" stroke-width="1.891"/>
+      <circle cx="0.708" cy="0.708" r="0.708" transform="translate(47.951 119.305)" fill="none" stroke="#231f20" stroke-miterlimit="10" stroke-width="0.473"/>
+    </g>
+    <g class="spray">
+      <line x1="23.146" y2="5.223" transform="translate(54.979 111.938)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.891"/>
+      <line x1="23.141" y1="5.569" transform="translate(54.984 122.868)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.891"/>
+      <line x2="28.096" transform="translate(55.654 120.013)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.891"/>
+    </g>
+    <path class="prohibition" d="M45,149.556a13.613,13.613,0,1,0,13.578,13.613A13.611,13.611,0,0,0,45,149.556Zm0,1.892a11.607,11.607,0,0,1,7.561,2.8L36.1,170.751a11.715,11.715,0,0,1,8.9-19.3Zm0,23.442a11.607,11.607,0,0,1-7.561-2.8l16.457-16.5a11.714,11.714,0,0,1-8.9,19.3Z" fill="#c64a27"/>
+    <path class="weed" d="M46.685,166.323a49.23,49.23,0,0,0-2.1-10.956v10.6c-3.7-4.934-10.276-6.108-10.276-6.108s8.644,1.917,10.072,11.111h2.807c.907-7.432,5.624-8.011,6.984-8.021A9.5,9.5,0,0,0,46.685,166.323Z" fill="#231f20"/>
+  </g>
+</svg>

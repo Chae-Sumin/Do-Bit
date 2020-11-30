@@ -1,0 +1,43 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(common.css);
+@import url(header.css);
+@import url(tab.css);
+
+main{position: relative; height: 100%; width: 100%; }
+.calendar_wrap{position: absolute; top: 88px; width: 100%; height: calc(100% - 163px);}
+.calendar_box{position: absolute; z-index: 15; top: 0; width: 100%; height: 370px; background: #fff; box-shadow: 0 3px 6px #0003;}
+.calendar_box>header{display: flex; flex-direction: column; align-items: center; width: 100%; height: 60px; margin-bottom: 10px;}
+.calendar_box>header>span{font-size: 18px; font-weight: 500; color: #000; line-height: 30px;}
+.calendar_box>header>div{display: flex; justify-content: center; height: 30px;}
+.calendar_box>header>div .month{display: block; font-size: 28px; width: 130px; line-height: 30px; color: #000; font-weight: 500; text-align: center;}
+.calendar_box>header>div>button{font-size: 20px; line-height: 30px; padding: 0 20px; color: #707070;}
+.calendar_box>table.cal{width: 100%; height: 300px;}
+.calendar_box>table.cal tr>*{text-align: center; width: 14.28%; font-size: 16px; font-weight: 500; color: #000;}
+.calendar_box>table.cal .sun{color: #C74811;}
+.calendar_box>table.cal .sat{color: #409300;}
+.schedule_box{overflow-y: auto; padding-top: 390px; width: 100%; height: calc(100% - 390px); background: url(../images/calendar/calendar_bg.png) repeat-y;}
+.schedule_box>ul>li{display: flex; height: 108px; padding: 0 15px 20px;}
+.schedule_box>ul>li div{display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; flex: 0 0 auto; width: 55px; height: 55px;}
+.schedule_box>ul>li div .month{font-size: 20px; line-height: 23px; font-weight: 500; color: #409300;}
+.schedule_box>ul>li div .dot{flex: 0 0 auto; width: 10px; height: 10px; margin-top: 10px; background: #fff; border: 3px solid #409300; border-radius: 5px; box-sizing: border-box; }
+.schedule_box>ul>li div .date{height: 22PX; width: 100%; color: #707070; font-size: 16px; font-weight: 500;}
+.schedule_box>ul>li>ul{display: flex; flex-direction: column; width: 100%; height: 100%; margin-left: 15px; border-radius: 0 12px 12px 12px; box-shadow: -1px 0 3px #0004;}
+.schedule_info .importance{width: 75px; height: 22px; margin: 10px 10px 5px; line-height: 20px; border-radius: 4px; background-color: #409300; text-align: center; font-size: 14px; font-weight: 500; box-shadow: 0 3px 3px #0003;} 
+.schedule_info .tit{margin-left: 15px; margin-bottom: 3px; font-size: 16px; font-weight: 500; color: #000;}
+.schedule_info .cont{margin-left: 15px; max-height: 40px; line-height: 20px; overflow: hidden; font-size: 14px; color: #000;}
+.schedule_box>ul>li.period article{position: relative;}
+.schedule_box>ul>li.period .period_bar{display: block; position: absolute; right: 4px; top: 17px; width: 2px; height: 50px;  background-color: #409300;}
+.schedule_box>ul>li.slightly .month{color: #FFEE00;}
+.schedule_box>ul>li.important .month{color: #C74811;}
+.schedule_box>ul>li.slightly .dot{border-color: #FFEE00;}
+.schedule_box>ul>li.important .dot{border-color: #C74811;}
+.schedule_box>ul>li.slightly .importance, .schedule_box>ul>li.slightly .period_bar{background-color: #FFEE00;}
+.schedule_box>ul>li.important .importance, .schedule_box>ul>li.important .period_bar{background-color: #C74811;}
+.calendar_box>table td{position: relative;}
+.d5::after, .d28::after,.d10::after, .d22::after{content: ""; position: absolute; left: calc(50% - 2.5px); top: 70%; display: block;  width: 5px; height: 5px; border-radius: 2.5px; background: #C74811; box-shadow: 0px 2px 3px #0004;}
+.d10::after{background: #409300;}
+.d22::after{background: #FFEE00;}
+.d20::before,.d21::before,.d22::before,.d23::before,.d24::before{content: ""; display: block; z-index: -1; position: absolute; top: 28%; width: 100%; height: 22px; background: #DEECCC; box-shadow: 3px 3px 3px #0003;}
+.d20::before{border-radius: 11px 0 0 11px;}
+.d24::before{border-radius: 0 11px 11px 0;}

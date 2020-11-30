@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.404" height="24.966" viewBox="0 0 22.404 24.966">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#409300"/>
+      <stop offset="1" stop-color="#5ca500"/>
+    </linearGradient>
+  </defs>
+  <g id="그룹_423" data-name="그룹 423" transform="translate(0.507 0.438)">
+    <path id="패스_72" data-name="패스 72" d="M.651,17.082s-3.237-10.04,4.722-14.8,14.876-.6,15.842-.6-2.826.074-2.826,5.875S15.6,19.016,4.293,19.016" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" fill="url(#linear-gradient)"/>
+    <path id="패스_73" data-name="패스 73" d="M0,0" transform="translate(15.823 3.731)" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" fill="url(#linear-gradient)"/>
+    <path id="패스_74" data-name="패스 74" d="M0,20.269A25.708,25.708,0,0,1,14.864,0" transform="translate(0.959 3.731)" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" fill="url(#linear-gradient)"/>
+    <line id="선_6" data-name="선 6" y1="6.033" transform="translate(3.964 8.696)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="패스_75" data-name="패스 75" d="M0,0" transform="translate(7.178 10.186)" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" fill="url(#linear-gradient)"/>
+    <line id="선_7" data-name="선 7" x1="5.688" transform="translate(7.178 10.185)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="선_8" data-name="선 8" y2="2.856" transform="translate(10.43 4.245)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>
